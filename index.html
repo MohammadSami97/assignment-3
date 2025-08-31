@@ -11,6 +11,7 @@
 
     <script src="https://kit.fontawesome.com/50e13c18a9.js" crossorigin="anonymous"></script>
     <script src="tailwind.config.js"></script>
+    
 </head>
 <body class="min-w-[100vh] bg-[#F5FFF6]">
     <header>
@@ -25,7 +26,7 @@
                 </div>
                 <div class="flex gap-5 max-w-96 ">
                     <div class="flex gap-2 bg-[#41FF6B1A] rounded-[50px] p-6 text-base font-black">
-                        <p>0</p>
+                        <p id="heart">0</p>
                         <img src="assets/heart.png" alt="" class="size-7">
                     </div>
                     <div class="flex gap-2 bg-[#41FF6B1A] rounded-[50px] p-6 text-base font-black">
@@ -57,7 +58,7 @@
                 <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
                     <img src="assets/emergency.png" alt=""  class="max-w-8 ">
                 </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
             </div>
             <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
             <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
@@ -76,13 +77,55 @@
             
             <div class="flex items-center justify-between mb-4">
                 <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
-                    <img src="assets/emergency.png" alt=""  class="max-w-8 ">
+                    <img src="assets/police.png" alt=""  class="max-w-8 ">
                 </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
             </div>
-            <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
-            <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
+            <p class="text-2xl font-bold text-[#111111]">Police Helpline Number</p>
+            <p class="text-lg font-normal text-[#5C5C5C] mb-6">Police</p>
             <p class="text-3xl font-bold text-[#111111]">999</p>
+            <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
+            <div class="  gap-2 flex ">
+                <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
+                    <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button class="bg-green-400 text-white w-[49%] p-4 items-center justify-items-center rounded-lg">
+                    <i class="fa-solid fa-phone" ></i> Call
+                </button>
+            </div>
+            </div>
+            <div class="bg-white max-w-md p-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)]">
+            
+            <div class="flex items-center justify-between mb-4">
+                <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
+                    <img src="assets/fire-service.png" alt=""  class="max-w-8 ">
+                </div>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
+            </div>
+            <p class="text-2xl font-bold text-[#111111]">Fire Service Number</p>
+            <p class="text-lg font-normal text-[#5C5C5C] mb-6">Fire Service</p>
+            <p class="text-3xl font-bold text-[#111111]">999</p>
+            <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
+            <div class="  gap-2 flex ">
+                <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
+                    <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button class="bg-green-400 text-white w-[49%] p-4 items-center justify-items-center rounded-lg">
+                    <i class="fa-solid fa-phone" ></i> Call
+                </button>
+            </div>
+            </div>
+            <div class="bg-white max-w-md p-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)]">
+            
+            <div class="flex items-center justify-between mb-4">
+                <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
+                    <img src="assets/ambulance.png" alt=""  class="max-w-8 ">
+                </div>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
+            </div>
+            <p class="text-2xl font-bold text-[#111111]">Ambulance Service</p>
+            <p class="text-lg font-normal text-[#5C5C5C] mb-6">Ambulance</p>
+            <p class="text-3xl font-bold text-[#111111]">1994-999999</p>
             <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
             <div class="  gap-2 flex ">
                 <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
@@ -99,11 +142,11 @@
                 <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
                     <img src="assets/emergency.png" alt=""  class="max-w-8 ">
                 </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
             </div>
-            <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
-            <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
-            <p class="text-3xl font-bold text-[#111111]">999</p>
+            <p class="text-2xl font-bold text-[#111111]">Women & Child Helpline</p>
+            <p class="text-lg font-normal text-[#5C5C5C] mb-6">Women & Child Helpline</p>
+            <p class="text-3xl font-bold text-[#111111]">109</p>
             <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
             <div class="  gap-2 flex ">
                 <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
@@ -120,11 +163,11 @@
                 <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
                     <img src="assets/emergency.png" alt=""  class="max-w-8 ">
                 </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
             </div>
-            <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
-            <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
-            <p class="text-3xl font-bold text-[#111111]">999</p>
+            <p class="text-2xl font-bold text-[#111111]">Anti-Corruption Helpline</p>
+            <p class="text-lg font-normal text-[#5C5C5C] mb-6">Anti-Corruption</p>
+            <p class="text-3xl font-bold text-[#111111]">106</p>
             <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
             <div class="  gap-2 flex ">
                 <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
@@ -141,11 +184,11 @@
                 <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
                     <img src="assets/emergency.png" alt=""  class="max-w-8 ">
                 </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
             </div>
-            <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
-            <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
-            <p class="text-3xl font-bold text-[#111111]">999</p>
+            <p class="text-2xl font-bold text-[#111111]">Electricity Helpline</p>
+            <p class="text-lg font-normal text-[#5C5C5C] mb-6">Electricity Outage</p>
+            <p class="text-3xl font-bold text-[#111111]">16216</p>
             <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
             <div class="  gap-2 flex ">
                 <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
@@ -162,11 +205,11 @@
                 <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
                     <img src="assets/emergency.png" alt=""  class="max-w-8 ">
                 </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
             </div>
-            <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
-            <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
-            <p class="text-3xl font-bold text-[#111111]">999</p>
+            <p class="text-2xl font-bold text-[#111111]">Brac Helpline</p>
+            <p class="text-lg font-normal text-[#5C5C5C] mb-6">Brac</p>
+            <p class="text-3xl font-bold text-[#111111]">16445</p>
             <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
             <div class="  gap-2 flex ">
                 <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
@@ -183,53 +226,11 @@
                 <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
                     <img src="assets/emergency.png" alt=""  class="max-w-8 ">
                 </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
+                <i class="fa-regular fa-heart fa-xl hearticon"></i>
             </div>
-            <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
-            <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
-            <p class="text-3xl font-bold text-[#111111]">999</p>
-            <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
-            <div class="  gap-2 flex ">
-                <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
-                    <i class="fa-regular fa-copy"></i> Copy
-                </button>
-                <button class="bg-green-400 text-white w-[49%] p-4 items-center justify-items-center rounded-lg">
-                    <i class="fa-solid fa-phone" ></i> Call
-                </button>
-            </div>
-            </div>
-            <div class="bg-white max-w-md p-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)]">
-            
-            <div class="flex items-center justify-between mb-4">
-                <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
-                    <img src="assets/emergency.png" alt=""  class="max-w-8 ">
-                </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
-            </div>
-            <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
-            <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
-            <p class="text-3xl font-bold text-[#111111]">999</p>
-            <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
-            <div class="  gap-2 flex ">
-                <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
-                    <i class="fa-regular fa-copy"></i> Copy
-                </button>
-                <button class="bg-green-400 text-white w-[49%] p-4 items-center justify-items-center rounded-lg">
-                    <i class="fa-solid fa-phone" ></i> Call
-                </button>
-            </div>
-            </div>
-            <div class="bg-white max-w-md p-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)]">
-            
-            <div class="flex items-center justify-between mb-4">
-                <div class="max-w-15 bg-[#FFE3E2] rounded-2xl p-4 items-center justify-items-center">
-                    <img src="assets/emergency.png" alt=""  class="max-w-8 ">
-                </div>
-                <i class="fa-regular fa-heart fa-xl"></i>
-            </div>
-            <p class="text-2xl font-bold text-[#111111]">National Emergency Number</p>
-            <p class="text-lg font-normal text-[#5C5C5C] mb-6">National Emergency</p>
-            <p class="text-3xl font-bold text-[#111111]">999</p>
+            <p class="text-2xl font-bold text-[#111111]">Bangladesh Railway Helpline</p>
+            <p class="text-lg font-normal text-[#5C5C5C] mb-6">Bangladesh Railway</p>
+            <p class="text-3xl font-bold text-[#111111]">163</p>
             <div class="mb-6 bg-[#F2F2F2] max-w-13 py-1.5 px-4 rounded-full justify-items-center items-center"><p class="text-lg font-normal text-[#5C5C5C]">All</p></div>
             <div class="  gap-2 flex ">
                 <button class="border-1 border-[#D4D6D5] w-[49%]  text-[#5C5C5C] p-4 items-center justify-items-center rounded-lg">
@@ -251,9 +252,11 @@
 
             </div>
         </section>
+        <script src="script.js"></script>
     </main>
     <footer>
 
     </footer>
+    
 </body>
 </html>
