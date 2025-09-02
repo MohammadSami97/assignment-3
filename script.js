@@ -19,21 +19,37 @@ const data = {
     
     }
 
-    
+var coins = parseInt(document.getElementById("coin").innerText);
 for (let i = 0; i < callBtn.length; i++) {
     callBtn[i].addEventListener("click", function () {
-        const div = document.createElement("div")
-        div.innerHTML=`<div class="flex items-center justify-between bg-[#FAFAFA] rounded-lg p-4 text-[#111111] text-lg">
-                    <div>
-                      <h1 class="  font-semibold">${data.name[i]}</h1>
-                      <p class="text-[#5C5C5C]  ">${data.num[i]}</p>
-                    </div>                        
-                  <p>time</p>
-              </div>
-              `
-              historyContainer.appendChild(div)
+        if (coins >= 20) {
+            
+            const div = document.createElement("div");
+            div.innerHTML=`<div class="flex items-center justify-between bg-[#FAFAFA] rounded-lg p-4 text-[#111111] text-lg">
+                        <div>
+                          <h1 class="  font-semibold">${data.name[i]}</h1>
+                          <p class="text-[#5C5C5C]  ">${data.num[i]}</p>
+                        </div>                        
+                      <p>time</p>
+                  </div>
+                  `
+                  historyContainer.appendChild(div)
+                  
+                  alert(`Calling...\n${data.name[i]}\n${data.num[i]}`)                    
+                coins = coins-20;
+                document.getElementById("coin").innerText = coins;
+        }
+                
+        else{
+                callBtn[i].addEventListener("click", function () {
+                    alert("Invalid! Not enough coins.")
+                    
+                })
+            }
     })
-}
+    }
+
+
 
 const clearBtn = document.getElementById("clear-btn")
 clearBtn.addEventListener("click", function () {
