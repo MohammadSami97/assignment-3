@@ -18,6 +18,7 @@ const data = {
     num:["999", "999", "999", "1994-999999", "109", "106", "16216", "16445", "163"]
     
     }
+var time = new Date().toLocaleTimeString()
 
 var coins = parseInt(document.getElementById("coin").innerText);
 for (let i = 0; i < callBtn.length; i++) {
@@ -30,19 +31,19 @@ for (let i = 0; i < callBtn.length; i++) {
                           <h1 class="  font-semibold">${data.name[i]}</h1>
                           <p class="text-[#5C5C5C]  ">${data.num[i]}</p>
                         </div>                        
-                      <p>time</p>
+                      <p>${time}</p>
                   </div>
                   `
                   historyContainer.appendChild(div)
                   
-                  alert(`Calling...\n${data.name[i]}\n${data.num[i]}`)                    
+                  alert(`📞Calling ${data.name[i]} ( ${data.num[i]} )...`)                    
                 coins = coins-20;
                 document.getElementById("coin").innerText = coins;
         }
                 
         else{
                 callBtn[i].addEventListener("click", function () {
-                    alert("Invalid! Not enough coins.")
+                    alert("Not enough coins (need 20 coin at least).")
                     
                 })
             }
@@ -56,3 +57,15 @@ clearBtn.addEventListener("click", function () {
     historyContainer.innerHTML = ''
     
 })
+
+
+var copyBtn = document.querySelectorAll(".copy-btn")
+var copyCounts = document.getElementById("copy-counts")
+for (let c = 0; c < copyBtn.length; c++) {
+    copyBtn[c].addEventListener("click", function () {
+        navigator.clipboard.writeText(data.num[c]);
+        alert(`Copied number: ${data.num[c]}`)
+        copyCounts.innerText++
+    })
+    
+}
